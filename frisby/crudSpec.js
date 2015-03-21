@@ -50,20 +50,20 @@ frisby.create('Create new Item')
 							.expectJSONTypes({
 								   Id: Number
 							 })
-							.afterJSON(function(json2){
+							// .afterJSON(function(json2){
 							
-								console.log(json2.Id,"-This is item upTED--");
-								frisby.create('Delete proect with ID:' )
-									.delete('https://todo.ly/api/items/'+IdItem+'.json' )
-									.inspectJSON()
-									.expectJSON({
-										Deleted: true
-									})
-									.afterJSON(function(json3){
-										console.log(json3.Id,"-This is item  deleted--");
+								// console.log(json2.Id,"-This is item upTED--");
+								// frisby.create('Delete proect with ID:' )
+									// .delete('https://todo.ly/api/items/'+IdItem+'.json' )
+									// .inspectJSON()
+									// .expectJSON({
+										// Deleted: true
+									// })
+									// .afterJSON(function(json3){
+										// console.log(json3.Id,"-This is item  deleted--");
 									
-									})
-							.toss();
+									// })
+							// .toss();
 							
 							})
 						.toss();
