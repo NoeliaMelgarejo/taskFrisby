@@ -1,4 +1,4 @@
-// Frisby tests
+
 
 var frisby = require('frisby');
 
@@ -12,7 +12,9 @@ frisby.globalSetup({
 });
 
 
-
+/*
+Test case to create a child Proyect
+*/
 
 frisby.create('Get Proyects')
 	.get('https://todo.ly/api/projects.json')
