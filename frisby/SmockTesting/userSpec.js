@@ -7,7 +7,7 @@ frisby.globalSetup({
 		headers: {
 		'Authorization': 'Basic bm9lbGlhbWVsZ2FyZWpvamF2YXNjcmlwdEBnbWFpbC5jb206Q29udHJvbDEyMw=='
 		}
-		//proxy: 'http://172.20.240.5:8080'
+	
 	}
 });
 
