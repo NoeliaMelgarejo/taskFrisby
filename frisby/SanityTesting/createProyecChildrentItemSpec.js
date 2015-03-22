@@ -90,13 +90,13 @@ for (var i=0;i < 2; i++) {
             cont++;
             var projectId = responseData.Id;
             IDs.push(responseData.Id);
-            console.log(" projeId:" + projectId);
+            console.log(" projectId:" + projectId);
             if (cont==2){
 			
                 ProjectChild(IDs).expectStatus(200)
                     .afterJSON(function(responseDataProyect){
                         var IdProyect=responseDataProyect.Id;
-                        console.log("ID proyect Parent:"+IdProyect);
+                        console.log("ID project Parent:"+IdProyect);
 
                         CreateItem(IdProyect).expectStatus(200)
                             .afterJSON(function(responseItem){
