@@ -4,11 +4,11 @@ var frisby = require('frisby');
 frisby.globalSetup({ //se aplica a todos
     request: {
         headers: {
-            'Authorization': 'Basic dmlyZ2luaWEudGVzdC5qYWxhQGdtYWlsLmNvbTpDb250cm9sMTIz'
+            'Authorization': 'Basic bm9lbGlhbWVsZ2FyZWpvamF2YXNjcmlwdEBnbWFpbC5jb206Q29udHJvbDEyMw=='
         },
         //proxy: 'http://172.20.240.5:8080',
         //json: true,  //declara el tipo de content
-        inspectOnFailure: true //si es que fallaq  muestre lo q recive
+        inspectOnFailure: true 
     }
 });
 
@@ -21,7 +21,9 @@ var parametersItem = {
         Children: Array
 };
 
-/*Function to create a project*/
+/**
+*Function to create a project
+*/
 var createProject = function(projectName){
     var now = new Date();
     var project1 = {
@@ -35,7 +37,9 @@ var createProject = function(projectName){
     
 };
 
-/*Function to create item with a project*/
+/**
+*Function to create item within a project
+*/
 var createItemWithinProject = function(proId, content, itemName){
     var projectId = proId;
     return frisby.create('Create a Item within a projet' + content)
@@ -50,7 +54,10 @@ var createItemWithinProject = function(proId, content, itemName){
 };
 
 
-/*****CRUD for an item within a project*********/
+
+/**
+* CRUD Test case1: create/read/update/delete an item within a project
+*/
 var project = {
     "Content": "projectWithItem",
     "Icon":"1"
@@ -104,6 +111,3 @@ createProject("projectWithItem")
     .toss();
 })
 .toss();
-
-
-/*****CRUD for an child item within a project*********/
