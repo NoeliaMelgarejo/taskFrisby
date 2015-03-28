@@ -1,13 +1,12 @@
 //CRUD
 var frisby = require('frisby');
 
-frisby.globalSetup({ //se aplica a todos
+frisby.globalSetup({ 
     request: {
         headers: {
             'Authorization': 'Basic bm9lbGlhbWVsZ2FyZWpvamF2YXNjcmlwdEBnbWFpbC5jb206Q29udHJvbDEyMw=='
         },
-        //proxy: 'http://172.20.240.5:8080',
-        //json: true,  //declara el tipo de content
+
         inspectOnFailure: true 
     }
 });
