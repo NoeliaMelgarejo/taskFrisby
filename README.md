@@ -1,13 +1,13 @@
-# taskFrisby 
-Type of testing 
+# taskFrisby. 
+Type of testing.
 ---------------
-Smock testing
--Scenarios
-Verify create User  
-Verify Delete  a user
-Verify Update  a user
-Verify get users 
-Verify users authenticated 
+Smock testing.
+-Scenarios.
+Verify create User.  
+Verify Delete  a user.
+Verify Update  a user.
+Verify get users .
+Verify users authenticated .
 
 
 Sanity testing
