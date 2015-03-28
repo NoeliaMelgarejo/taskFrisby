@@ -2,12 +2,14 @@
 Type of testing 
 ---------------
 Smock testing
-•	Scenarios
--Verify create User  
--Verify Delete  a user
--Verify Update  a user
--Verify get users 
--Verify users authenticated 
+-Scenarios
+Verify create User  
+Verify Delete  a user
+Verify Update  a user
+Verify get users 
+Verify users authenticated 
+
+
 Sanity testing
 •	Scenarios
 o	Verify create  items deleting previously all the items
