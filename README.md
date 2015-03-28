@@ -1,4 +1,6 @@
 # taskFrisby 
+Type of testing 
+---------------
 Smock testing
 •	Scenarios
 o	Verify create User  
