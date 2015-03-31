@@ -24,7 +24,8 @@ Token:  bm9lbGlhbWVsZ2FyZWpvamF2YXNjcmlwdEBnbWFpbC5jb206Q29udHJvbDEyMw==
 ■ Verify Create an Item in Child Project
 ■ Verify create child project after deleting previously all the projects
 ■ Verify Create Project with token authentication 
-■ Verify after checking an item into inbox filter it is listed into the done list for Inbox filter
+■ Verify after checking an item into inbox filter it is listed into the done list for Inbox filter 
+
 --------------------------------------------------------------------------------------------------
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -36,6 +37,7 @@ Token:  bm9lbGlhbWVsZ2FyZWpvamF2YXNjcmlwdEBnbWFpbC5jb206Q29udHJvbDEyMw==
 ■ Verify that is not possible to add a item with invalid parent item id 
 ■ Verify that is not possible to add a item with invalid project id 
 ■ Verify that it is not possible to add project with empty name
+
 --------------------------------------------------------------------------------------------------
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -46,4 +48,5 @@ Token:  bm9lbGlhbWVsZ2FyZWpvamF2YXNjcmlwdEBnbWFpbC5jb206Q29udHJvbDEyMw==
 ■ CRUD for an item within Next filter
 ■ CRUD for child Item of project
 ■ CRUD for more than 1 items
+
 --------------------------------------------------------------------------------------------------
