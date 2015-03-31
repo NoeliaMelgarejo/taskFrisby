@@ -12,7 +12,7 @@ frisby.globalSetup({
 });
 
 /**
- * Test case that allows Create two Items and verify in all the list of Items the creation of  the two items 
+ * Test case that allows Create two Items and verify they are listed in the  list of al Items
  */
 frisby.create('Gel all Items')
     .get('https://todo.ly/api/items.json')
