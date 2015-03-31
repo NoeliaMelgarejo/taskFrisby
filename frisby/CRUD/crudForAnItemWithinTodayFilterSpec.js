@@ -4,7 +4,7 @@ var frisby = require('frisby');
 frisby.globalSetup({ 
     request: {
         headers: {
-            'Authorization': 'Basic bm9lbGlhbWVsZ2FyZWpvamF2YXNjcmlwdEBnbWFpbC5jb206Q29udHJvbDEyMw=='
+            'Authorization': 'Basic dmlyZ2luaWEudGVzdC5qYWxhQGdtYWlsLmNvbTpDb250cm9sMTIz'
         },
 
         inspectOnFailure: true 
@@ -18,22 +18,6 @@ var parametersItem = {
         Checked:Boolean,
         Priority:Number,
         Children: Array
-};
-
-/**
-*Function to create a project
-*/
-var createProject = function(projectName){
-    var now = new Date();
-    var project1 = {
-        "Content":  projectName + now.getTime()
-    };
-
-    return frisby.create('Create project')
-        .post('https://todo.ly/api/projects.json', project1, {json: true})
-        .inspectJSON()
-        .expectJSON(project1);
-    
 };
 
 /**
@@ -56,8 +40,6 @@ var createItemWithinTodayFilter = function(itemName){
         .expectStatus(200)
         .expectJSONTypes(parametersItem)    
 };
-
-
 
 /**
 * CRUD Test case3: create/read/update/delete an item within the today filter
@@ -92,7 +74,7 @@ createItemWithinTodayFilter("itemNameFilter1")
                     .afterJSON(function(responseItemUpdate){
                         var itemIdUpdate = responseItemUpdate.Id
                         console.log("itemIdUpdate:" + itemIdUpdate);
-                        frisby.create('Delete item with ID:' + itemIdUpdate + ' from project: ' + responseItemUpdate.projectId)
+                        frisby.create('Delete item with ID:' + itemIdUpdate)
                             .delete('https://todo.ly/api/items/' + itemIdUpdate +'.json' )
                             .inspectJSON()
                             .expectJSON({
